@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgb(113, 113, 231), white);
+            height: 100vh;
+            
+        }
+
+        header nav ul{
+            text-align: right;
+            padding: 15px 0;
+        }
+
+        header nav ul li{
+            display: inline-block;
+            font-size: .7em;
+            margin: 0 15px 0 0;
+        }
+
+        ul li:nth-child(2){
+            margin-right: 4px;
+        }
+
+        ul li a{
+            color: #666;
+            text-decoration: none;
+        }
+
+        ul li a:hover{
+            text-decoration: underline;
+        }
+
+        ul .icone{
+            border: 1px solid transparent;
+            display: inline-block;
+            padding: 7px;
+            border-radius: 50%;
+            transition: all 2s;
+        }
+
+        ul .login{
+            background-color: rgb(102, 102, 129);
+        }
+
+        ul .login:hover{
+            border: 3px solid #eee;
+            padding: 5px;
+            background-color: rgb(102, 102, 129);
+
+        }
+
+        nav ul li img{
+            width: 18px;
+            height: 18px;
+        }
+
+        ul .app:hover{
+            background: #ccc;
+            border-color: #ddd;
+        }
+
+        main{
+            text-align: center;
+        }
+
+        main h1{
+            font-size: 4.5em;
+            font-weight: 600;
+            color:  rgb(102, 102, 129);
+        }
+
+        form{
+            border: 1px solid black;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 18px;
+        }
+
+       input[type="search"]{
+            border: none;
+            background: none;
+            outline: none;
+            width: 500px;
+       }
+
+       input[type="submit"]{
+            border: none;
+            background: none;
+            background-image: url(search_FILL0_wght400_GRAD0_opsz24.png);
+            padding-right: 15px;
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://mail.google.com" class="menu">Gmail</a></li>
+                <li><a href="https://www.google.com.br/imghp?hl=pt-PT&tab=ri&authuser=0&ogbl" class="menu imagens">imagens</a></li>
+                <li class="icone app"><a href="#"><img src="apps_FILL0_wght400_GRAD0_opsz48.png" alt="aplicativos google"></a></li>
+                <li class="icone login"><a href="#"><img src="person_FILL0_wght400_GRAD0_opsz48.png" alt="login"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Google</h1>
+        <form action="http://google.com/search" method="get">
+            <input type="search" name="q" id="google"> 
+            <input type="submit" value=" ">
+        </form>
+        
+    </main>
+</body>
+</html>
